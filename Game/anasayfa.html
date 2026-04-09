@@ -1,0 +1,166 @@
+<!DOCTYPE html> <!-- HTML5 belge türü -->
+<html lang="tr"> <!-- Sayfa dili Türkçe -->
+<head>
+<meta charset="UTF-8"> <!-- Karakter seti -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive tasarım -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Google Fonts bağlantı hızlandırma -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Font dosyaları için -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> <!-- Poppins fontu -->
+
+<!-- Sayfa Başlığı -->
+<title>Ela's Muffin Group - BeGame</title>
+
+<!-- CSS dosyası -->
+<link rel="stylesheet" href="anasayfa.css">
+</head>
+
+<body>
+<!-- Navigasyon barı -->
+<nav class="navbar">
+    <div class="logo-area">
+        <div class="logo" data-key="game">Game</div> <!-- Logo yazısı -->
+        <p class="logo2" data-key="orj">Be theme original.</p> <!-- Alt açıklama -->
+    </div>
+    
+    <!-- Menü listesi -->
+    <ul class="menu">
+        <li><a href="#hero" data-key="home">Home</a></li> <!-- Ana sayfa -->
+        <li><a href="#features" data-key="features">Features</a></li> <!-- Özellikler -->
+        <li><a href="#weapons" data-key="weapons">Weapons</a></li> <!-- Silahlar -->
+        <li><a href="#trailer" data-key="trailer">Trailer</a></li> <!-- Tanıtım  -->
+        <li><a href="#download" data-key="download">Download</a></li> <!-- İndirme -->
+        
+        <!-- Dil seçimi dropdown -->
+        <li>
+            <select class="dropdown" id="languageSelect">
+                <option selected hidden>Language</option> <!-- Butonda görünen Başlık kısmı -->
+                <option value="en">English</option> <!-- İngilizce -->
+                <option value="tr">Türkçe</option> <!-- Türkçe -->
+            </select>
+        </li>
+    </ul>
+</nav>
+
+    <!-- Hero (giriş) bölümü -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="fade" data-key="videogame">Welcome to my video game world!</h1> <!-- Başlık -->
+            <div class="trygame">
+                <a href="https://themes.muffingroup.com/be/game/"> <!-- Dış link -->
+                    <button class="glow-btn" data-key="downloadgame">Download Game</button> <!-- Buton -->
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Özellik bölümü -->
+    <section id="features" class="features">
+        <h2 class="fade" data-key="gamefeatures">Game Features</h2> <!-- Başlık -->
+        <div class="feature-grid">
+
+            <!-- Özellik kartı 1 -->
+            <div class="feature fade">
+                <h3 data-key="openWorld">Open World</h3>
+                <p data-key="explore">Explore massive cities.</p>
+            </div>
+            
+            <!-- Özellik kartı 2 -->
+            <div class="feature fade">
+                <h3 data-key="epicBosses">Epic Bosses</h3>
+                <p data-key="epic">Fight giant mutants and war machines.</p>
+            </div>
+
+            <!-- Özellik kartı -->
+            <div class="feature fade">
+                <h3 data-key="upgradeSystem">Upgrade System</h3>
+                <p data-key="upgrade">Customize your weapons and skills.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Silahlar  -->
+    <section id="weapons" class="weapons">
+        <h2 class="fade" data-key="weapons">Weapons</h2>
+        <div class="weapon-grid">
+            
+            <!-- GIF görseli -->
+            <div class="gif">
+                <img src="Images/dailyfina-strawberries-9025_512.gif">
+            </div>
+
+            <!-- Silah Kartı -->
+            <div class="weapon fade">
+                <h3 data-key="uzi">Laser UZI</h3>
+                <p data-key="fast">Fast firing futuristic weapon.</p>
+            </div>
+
+            <!-- Silah kartı -->
+            <div class="weapon fade">
+                <h3 data-key="spaz">Power SPAZ</h3>
+                <p data-key="massive">Massive shotgun damage.</p>
+            </div>
+
+            <!-- Silah kartı -->
+            <div class="weapon fade">
+                <h3 data-key="cannon">Plasma Cannon</h3>
+                <p data-key="plasma">Explosive plasma technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trailer bölümü -->
+    <section id="trailer" class="trailer">
+        
+        <!-- Başlık -->
+        <h2 class="fade" data-key="gt">Game Trailer</h2>
+        
+        <!-- Video iframe -->
+        <iframe src="https://themes.muffingroup.com/be/game/"allowfullscreen></iframe>
+
+        <!-- Kedi görseli -->
+        <div class="cat-gif">
+            <img src="/Images/cat.png">
+        </div>
+    </section>
+    
+    <!-- İndirme bölümü -->
+    <section id="download" class="download">
+        <h2 class="fade" data-key="now">Download Now</h2>
+        <br>
+        
+        <!-- Açıklama metni -->
+        <p data-key="world">Immerse yourself into the dangerous retro world, full of weapons, mutants, traps and... fruits.<br>
+            Download The Game and save the world!
+        </p>
+        <br>
+        
+        <!-- Oyunu dene 1 -->
+        <div class="trygame">
+            <p data-key="puzzle">You should definitely try our new game, the Memory Card Puzzle!</p>
+            <br>
+            
+            <!-- 1. Oyunun sayfasına yönlendirme -->
+            <a href="game.html">
+                <button class="glow-btn" onclick="startGame()" data-key="trybtn1">TRY GAME 1</button>
+            </a>
+        </div>
+    </br>
+        <!-- Oyunu dene 2-->
+        <div class="trygame">
+
+            <!-- 2. Oyunun sayfasına yönlendirme -->
+            <a href="yilan.html">
+                <button class="glow-btn" data-key="trybtn2">TRY GAME 2</button>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Sayfanın en alt kısmında yer alan telif hakkı bilgisi -->
+    <footer>
+        <p>© 2026 Ela Gaming Studio</p>
+    </footer>
+
+    <!-- JavaScript dosyası -->
+    <script src="anasayfa.js"></script>
+</body>
+</html>

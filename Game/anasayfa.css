@@ -1,0 +1,285 @@
+/* Tüm elementler için geçerli olan ayar kısmı */
+*{
+    margin: 0; /* Dış boşlukları sıfırlar */
+    padding: 0; /* İç boşlukları sıfırlar */
+    box-sizing:border-box; /* Genişlik hesaplamasını düzenler */
+    font-family:'Poppins', sans-serif; /* Yazı tipi */
+}
+
+/* Sayfa genel ayarları */
+body{
+    background:#0b0b0b; /* Arka plan rengi */
+    color:rgb(255, 255, 255); /* Yazı rengi */
+    scroll-behavior: smooth; /* Yumuşak kaydırma */
+    box-sizing: border-box; /* Tüm elemanlarda düzgün boyut hesaplama */
+}
+
+/* Üst menü (navbar) tasarımı */
+.navbar{
+    display: flex; /* Yatay hizalama */
+    justify-content: space-between; /* İki yana yaslama */
+    align-items: center; /* Dikey ortalama */
+    padding: 20px 10%; /* İç boşluk */
+    background:rgb(0, 0, 0); /* Arka plan */
+    position: sticky; /* Scroll yapınca sabit kalır */
+    top: 0; /* Üste yapışır */
+    z-index: 100; /* Üstte görünmesini sağlar */
+}
+
+/* Bölümlere scroll ile giderken üst boşluk bırakır */
+#hero,
+#features,
+#weapons,
+#trailer,
+#download{
+scroll-margin-top:90px; /* Navbar altında kalmaması için boşluk */
+}
+
+/* Logo yazısı */
+.logo{
+    color:#e79db6; /* yazı rengi */
+    font-size: 45px; /* yazı boyutu */
+    font-weight: bold; /* yazı tipi kalın */
+}
+
+/* Logo alt yazısı */
+.logo2{
+    margin-top: auto; /* Aşağıda otomatik dış boşluk */
+    font-size: 16px; /* yazı boyutu */
+    color:#666; /* yazı rengi */
+}
+
+/* Dil seçimi dropdown */
+.dropdown{
+    border: none; /* Kenarlık kaldırılır */
+    outline: none; /* Tıklanınca çıkan çerçeve kaldırılır */
+    background-color: white; /* Arka plan rengi beysz */
+    font-size: 20px; /* Yazı boyutu */
+    border-radius: 10px; /* Kenar yuvarlak derecesi */
+    color: black; /* Yazı rengi */
+}
+
+/* Menü genel yapı */
+.menu{
+    display: flex; /* Yatay dizilim */
+    align-items: center; /* Ortalar */
+    gap: 20px; /* Elemanlar arası boşluk */
+    list-style: none; /* Noktaları kaldırır */
+}
+
+/* Menü elemanları */
+.menu li{
+    margin-left:20px; /* Soldan boşluk */
+}
+
+/* Menü linkleri */
+.menu a{
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    color: white; /* Yazı rengi */
+}
+
+/* Sol alttaki kedi GIF */
+.cat-gif{
+    position: fixed; /* Sabit konum */
+    bottom: 20px; /* Alttan uzaklık */
+    left: 20px; /* Soldan uzaklık */
+    width: 80px; /* Genişlik */
+    z-index: 999; /* En üstte görünür */
+    animation: catJump 2.5s infinite; /* Animasyon sürekli tekrar eder */
+}
+
+/* Kedi görseli boyutu */
+.cat-gif img{
+    width:100%; /* Kutuyu tamamen kaplar */
+}
+
+/* Kedi zıplama animasyonu */
+@keyframes catJump{
+
+    0%{
+        transform: translateY(0); /* Başlangıç */
+    }
+
+    50%{
+        transform: translateY(-10px); /* Yukarı zıplar */
+    }
+
+    100%{
+        transform: translateY(0); /* Geri iner */
+    }
+
+}
+
+/* Hero (giriş) alanı */
+.hero{
+    height:100vh; /* Tam ekran yüksekliği */
+    background:url("Images/arkaplann.jpg") center/cover fixed; /* Arka plan resmi */
+    display:flex; /* Flexbox */
+    justify-content:center; /* Yatay ortalama */
+    align-items:center; /* Dikey ortalama */
+    text-align:center; /* Metni ortalar */
+}
+
+/* Hero başlık */
+.hero-content h1{
+    font-size: 65px; /* Yazı boyutu */
+    margin-bottom: 20px; /* Dış boşluk */
+    background:rgba(0,0,0,0.6); /* Yarı saydam arka plan */
+    display:inline-block; /* Sadece yazı kadar yer kaplar */
+    padding:10px 20px; /* İç boşluk */
+    border-radius: 10px; /* Yuvarlak köşe */
+}
+
+/* Hero paragraf kısmı */
+.hero-content p{
+    font-size: 20px; /* Yazı boyutu */
+    margin-bottom: 30px; /* Dış boşluk */
+}
+
+/* Buton tasarımı */
+.glow-btn{
+    padding: 15px 35px; /* İç boşluk */
+    font-size: 18px; /* Yazının boyutu */
+    background:#eba7a7f8; /* Arkaplan rengi */
+    border: none; /* */
+    color:white; /* yazı rengi beyaz */
+    border-radius: 10px; 
+    font-weight: bold; /* Yazı tipi kalın */
+    cursor:pointer; /* El işareti */
+    box-shadow:0 0 10px #ff0055; /* Işık efekti */
+    transition:0.3s; /* Yumuşak geçiş */
+}
+
+/* Buton hover efekti */
+.glow-btn:hover{
+    box-shadow:0 0 30px #a80239; /* Parlama artar */
+    transform:scale(1.05); /* Biraz büyür */
+}
+
+/* Buton animasyonlu hali */
+.glow-btn.animate{
+    transform:scale(1.2); /* Daha fazla büyür */
+    box-shadow:0 0 30px #660202;
+}
+
+/* Özellikler bölümü */
+.features{
+    padding: 120px 10%; /* İç boşluk */
+    text-align: center; /* Ortalama */
+    background: #475357; /* Arka plan rengi */
+}
+
+/* Özellik kartları grid yapısı */
+.feature-grid{
+    margin-top: 40px; /* Üst boşluk */
+    display: grid; /* Grid sistemi */
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); /* Responsive kolon */
+    gap: 30px; /* boşluk */
+}
+
+/* Tek özellik kartı */
+.feature{
+    background:#aa7291; /* Arka plan rengi */
+    padding: 30px; /* İç boşluk */
+    border-radius: 10px; /* Köşelerini yuvarlak yapar */
+    transition: 0.3s; /* Hover animasyonu */
+}
+
+/* Hover efekti */
+.feature:hover{
+    transform:translateY(-10px); /* Yukarı çıkar */
+}
+
+/* Silahlar bölümü */
+.weapons{
+    padding: 120px 10%; /* iç boşluk */
+    text-align: center; /* Ortalanmış içerik hepsini ortalar */
+    
+}
+
+/* Silah grid yapısı */
+.weapon-grid{
+    margin-top: 40px; /* Dış boşluk */
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px; /* aralarındaki boşluk */
+}
+
+/* Silah kartı */
+.weapon{
+    background: #964545; /* Arka plan rengi */
+    padding: 25px; /* İç boşluk */
+    border-radius: 10px; /* Köşelerini yuvarlak yapar */
+}
+
+/* Trailer bölümü */
+.trailer{
+    padding:120px 10%; /* İç boşluk */
+    background:#667780; /* Arka plan rengi */
+    text-align: center; /* Yazıyı ortalamak için */
+}
+
+/* Video iframe */
+.trailer iframe{ 
+    width: 80%; /* Genişlik */
+    height: 420px; /* Yükseklik */
+    margin-top: 40px; /* Üst boşluk */
+}
+
+/* Download bölümü */
+.download{
+    padding:120px 10%; /*  */
+    text-align: center; /* İçeriğin hepsini ortalar */
+}
+
+/* Footer tasarımı */
+footer{
+    background: #5e7379; /* Arka plan rengi */
+    text-align: center; /* Yazıyı ortalar */
+    padding: 30px; /* İç boşluk */
+}
+
+/* Fade (yavaş görünme) efekti */
+.fade{
+    opacity: 0; /* Başta görünmez */
+    transform: translateY(40px); /* Aşağıdan gelir */
+    transition: all 1s; /* 1 saniyede animasyon */
+}
+
+/* Görünür olduğunda */
+.fade.show{
+    opacity: 1; /* Görünür olur */
+    transform: translateY(0); /* Normal konum */
+}
+
+/* Sağ alttaki GIF */
+.gif{
+    position: fixed; /* Sabit */
+    bottom: 20px; /* Alt */
+    right: 20px; /* Sağ */
+    width: 80px; /* Genişlik */
+    z-index: 999;
+    animation: strawberryJump 2s infinite; /* Sürekli animasyon */
+}
+
+/* GIF görsel boyutu */
+.gif img{
+    width: 100%; /* Genişlik */
+}
+
+/* Çilek zıplama animasyonu */
+@keyframes strawberryJump{ 
+
+    0%{
+        transform: translateY(0); /* Başlangıç */
+    }
+    
+    50%{
+        transform: translateY(-15px); /* Yukarı çıkar */
+    }
+    
+    100%{
+        transform: translateY(0); /* Geri iner */
+    }
+
+}

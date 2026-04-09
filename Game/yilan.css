@@ -1,0 +1,117 @@
+/* Genel Sayfanın Stili */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Press Start 2P', monospace;
+  color: #e0e0e0;
+  /* Hafif tarama çizgisi efekti - CRT monitör hissi */
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,255,150,0.015) 2px,
+    rgba(0,255,150,0.015) 4px
+  );
+}
+
+/* Başlık */
+h1 {
+  font-size: 1.4rem;
+  color: #00ff88;
+  letter-spacing: 4px;
+  margin-bottom: 0.5rem;
+  /* Parlama (glow) efekti */
+  text-shadow:
+    0 0 8px #00ff88,
+    0 0 20px rgba(0, 255, 136, 0.4);
+  animation: flicker 3s infinite;   /* Hafif titreme animasyonu */
+}
+
+/* CRT ekran titreme animasyonu */
+@keyframes flicker {
+  0%, 95%, 100% { opacity: 1; }
+  96%            { opacity: 0.85; }
+  97%            { opacity: 1; }
+  98%            { opacity: 0.9; }
+}
+
+/* Skor Paneli */
+.scoreboard {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 1.2rem;
+  font-size: 0.55rem;
+  letter-spacing: 2px;
+}
+
+.scoreboard span {
+  color: #666;
+}
+
+.scoreboard strong {
+  color: #00ff88;
+  font-size: 0.75rem;
+  text-shadow: 0 0 6px #00ff88;
+}
+
+/* Oyun Alanı */
+#gameCanvas {
+  display: block;
+  border: 2px solid #00ff88;
+  border-radius: 4px;
+  box-shadow:
+    0 0 12px rgba(0, 255, 136, 0.5),
+    inset 0 0 20px rgba(0, 255, 136, 0.03);
+  cursor: none;
+}
+
+/* Mobil Kontrol Butonları */
+.controls {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 52px);
+  grid-template-rows: repeat(2, 52px);
+  gap: 6px;
+}
+
+.controls button {
+  background: transparent;
+  border: 1.5px solid #333;
+  color: #888;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  font-family: inherit;
+}
+
+.controls button:active {
+  border-color: #00ff88;
+  color: #00ff88;
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+  transform: scale(0.93);
+}
+
+/* Buton grid konumlandırması */
+#btnUp    { grid-column: 2; grid-row: 1; }
+#btnLeft  { grid-column: 1; grid-row: 2; }
+#btnStart { grid-column: 2; grid-row: 2; font-size: 0.9rem; }
+#btnRight { grid-column: 3; grid-row: 2; }
+
+/* Alt bilgi yazısı */
+.hint {
+  margin-top: 1rem;
+  font-size: 0.4rem;
+  color: #333;
+  letter-spacing: 2px;
+}

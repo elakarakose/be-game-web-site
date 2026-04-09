@@ -1,0 +1,38 @@
+<!-- Google Fonts: Retro oyun hissi için "Press Start 2P" fontu -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yılan Oyunu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="yilan.css" />
+</head>
+<body>
+
+  <h1>🐍 YILAN</h1> <!-- Başlık -->
+
+  <!-- Skor Göstergesi -->
+  <div class="scoreboard">
+    <span>SKOR <strong id="scoreDisplay">0</strong></span>
+    <span>EN YÜKSEK <strong id="bestDisplay">0</strong></span>
+  </div>
+
+  <!-- Oyun alanı: JavaScript ile piksel piksel çizilir -->
+  <canvas id="gameCanvas" width="360" height="360"></canvas>
+
+  <!-- Mobil / dokunmatik ekran kontrol butonları -->
+   <div class="controls">
+    <button id="btnUp"> ↑ </button>
+    <button id="btnLeft"> ← </button>
+    <button id="btnStart"> ▶ </button>
+    <button id="btnRight"> → </button>
+  </div>
+
+  <p class="hint">OK TUŞLARI VEYA BUTONLARLA OYNA</p>
+
+  <!-- Js Sayfasına Geçiş -->
+  <script src="yilan.js"></script>
+</body>
+</html>

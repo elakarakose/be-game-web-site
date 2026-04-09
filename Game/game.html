@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAFIZA OYUNU 🃏</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+<div class="title">HAFIZA 🃏</div>
+
+<div class="hud">
+  <div class="hud-item">SKOR<div class="hud-val" id="scoreEl">0</div></div>
+  <div class="hud-item">HAMLE<div class="hud-val" id="movesEl">0</div></div>
+  <div class="hud-item">SÜRE<div class="hud-val" id="timeEl">60</div></div>
+  <div class="hud-item">COMBO<div class="hud-val" id="comboEl">x1</div></div>
+</div>
+
+<div class="timer-wrap">
+    <div id="timerBar" style="width:100%"></div>
+</div>
+
+<div class="level-btns">
+  <button class="lvl-btn active" onclick="setLevel(1,this)">KOLAY 4×4</button>
+  <button class="lvl-btn" onclick="setLevel(2,this)">ORTA 5×4</button>
+  <button class="lvl-btn" onclick="setLevel(3,this)">ZOR 6×4</button>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<div id="overlay">
+  <div class="ov-title">HAFIZA KARTI OYUNU</div>
+  <div class="ov-sub">Eşleşen kartları bul!<br>Combo yaparak puan kazan 🔥<br>Süre dolmadan tamamla!</div>
+  <button class="ov-btn" onclick="startGame()">BAŞLAT ▶</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
