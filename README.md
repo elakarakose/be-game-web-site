@@ -15,7 +15,9 @@ Kolay navigasyon ve kullanıcı deneyimi
 Oyun Sitesi tanıtımı ve İki farklı oyun deneme sayfası
 
 Kullanılan Teknolojiler;
+
 HTML5 – Sayfa yapısı CSS – Tasarım ve stil düzenlemeleri JavaScript – Etkileşim ve dinamik özellikler
 
 Projemin Amacı:
+
 Bu proje; Frontend geliştirme pratiği yapmak, modern web tasarım prensiplerini uygulamak ve kişisel oyun sitesi oluşturma sürecini öğrenmek amacıyla geliştirilmiştir.
