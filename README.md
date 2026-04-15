@@ -5,9 +5,6 @@ Bu projemde oyun severler için temiz arayüze sahip ve oldukça kullanışlı k
 [Oyun Web Sitesi.docx](https://github.com/user-attachments/files/26600203/Oyun.Web.Sitesi.docx)
 - Oyun Web Sitesini Nasıl yaptığımı burada kısaca anlatıyorum.
 
-xxx
-- Buradan da proje anlatımını daha detaylı okuyabilirsiniz. 
-
 Proje Özellikleri
 
 Modern ve sade kullanıcı arayüzü
