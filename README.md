@@ -9,13 +9,12 @@ Proje Özellikleri
 
 Modern ve sade kullanıcı arayüzü
 Responsive (mobil uyumlu) tasarım
-Hero bölümü ile dikkat çekici giriş alanı
+Hero bölümü ile giriş alanı
 Bölümlere ayrılmış içerik yapısı
 Kolay navigasyon ve kullanıcı deneyimi
-Oyun Sitesi tanıtımı ve İki oyun deneme sayfası
+Oyun Sitesi tanıtımı ve İki farklı oyun deneme sayfası
 
 Kullanılan Teknolojiler;
-
 HTML5 – Sayfa yapısı CSS – Tasarım ve stil düzenlemeleri JavaScript – Etkileşim ve dinamik özellikler
 
 Projemin Amacı:
