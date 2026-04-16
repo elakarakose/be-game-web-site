@@ -3,7 +3,7 @@ Bu projemde oyun severler için temiz arayüze sahip ve oldukça kullanışlı k
 İnceledikten sonra beğendiyseniz bir yıldız vermeyi unutmayın.
 
 [Oyun Web Sitesi.docx](https://github.com/user-attachments/files/26600203/Oyun.Web.Sitesi.docx)
-- Oyun Web Sitesini Nasıl yaptığımı burada kısaca anlatıyorum.
+Oyun Web Sitesini Nasıl yaptığımı burada kısaca anlatıyorum.
 
 Proje Özellikleri
 
@@ -15,6 +15,7 @@ Kolay navigasyon ve kullanıcı deneyimi
 Oyun Sitesi tanıtımı ve İki farklı oyun deneme sayfası
 
 Kullanılan Teknolojiler;
+
 HTML5 – Sayfa yapısı CSS – Tasarım ve stil düzenlemeleri JavaScript – Etkileşim ve dinamik özellikler
 
 Projemin Amacı:
